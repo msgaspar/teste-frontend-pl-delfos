@@ -5,7 +5,7 @@ import {
   ChevronUpDownIcon,
   XMarkIcon,
 } from '@heroicons/react/24/solid'
-import { Box, Stack } from '@mui/system'
+import { Box, Stack } from '@mui/material'
 
 export function Header() {
   return (
@@ -15,7 +15,7 @@ export function Header() {
         height: '3.5rem',
         backgroundColor: 'background.lightGrey',
         borderBottom: '1px solid',
-        borderColor: 'borders.lightGrey',
+        borderColor: 'border.main',
         display: 'flex',
         alignItems: 'center',
         px: '1rem',
@@ -70,7 +70,7 @@ export function Header() {
           alignItems: 'center',
           gap: '8px',
           borderRight: '1px solid',
-          borderColor: 'borders.lightGrey',
+          borderColor: 'border.main',
           height: '100%',
         }}
       >

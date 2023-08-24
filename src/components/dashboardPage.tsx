@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Stack } from '@mui/system'
+import { Box, Stack } from '@mui/material'
 import { Header } from './header'
 import {
   Disclosure,
@@ -15,7 +15,7 @@ import {
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid'
 import HighchartsReact from 'highcharts-react-official'
 import Highcharts from 'highcharts'
-import { CustomizedTables } from './table'
+import CustomizedTables from './table'
 
 export function DashboardPage() {
   return (
@@ -27,7 +27,7 @@ export function DashboardPage() {
           sx={{
             width: '40%',
             borderRight: '1px solid',
-            borderColor: 'borders.lightGrey',
+            borderColor: 'border.main',
           }}
         >
           Mapa aqui
@@ -318,7 +318,7 @@ const EventsGroup = (props: {
             sx={{
               width: '100%',
               border: '1px solid',
-              borderColor: 'borders.lightGrey',
+              borderColor: 'border.main',
               borderRadius: '8px 8px 0 0',
               bgcolor: 'lightGrey',
               height: '50px',
@@ -390,7 +390,7 @@ const EventsGroup = (props: {
               border: '1px solid',
               borderRadius: '0 0 4px 4px',
               borderTop: 'none',
-              borderColor: 'borders.lightGrey',
+              borderColor: 'border.main',
             }}
             spacing="1.5rem"
           >
@@ -413,7 +413,7 @@ const RiskCard = (props: {
       sx={{
         border: '1px solid',
         borderRadius: '4px',
-        borderColor: 'borders.lightGrey',
+        borderColor: 'border.main',
         display: 'flex',
         flexDirection: 'column',
       }}
@@ -422,7 +422,7 @@ const RiskCard = (props: {
         sx={{
           display: 'flex',
           borderBottom: '1px solid',
-          borderColor: 'borders.lightGrey',
+          borderColor: 'border.main',
           alignItems: 'flex-start',
         }}
       >

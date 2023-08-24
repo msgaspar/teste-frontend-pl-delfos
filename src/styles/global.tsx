@@ -1,4 +1,4 @@
-import { GlobalStyles as Global, css } from '@mui/system'
+import { GlobalStyles as Global, css } from '@mui/material'
 
 export function GlobalStyles() {
   return (

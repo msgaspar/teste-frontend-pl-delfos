@@ -9,7 +9,16 @@ import {
   MapIcon,
   MegaphoneIcon,
 } from '@heroicons/react/24/outline'
-import { Box, styled } from '@mui/system'
+import { Box, styled } from '@mui/material'
+
+// const navigation = [
+//   { name: 'Dashboard', href: '#', icon: MapIcon, current: true },
+//   { name: 'Team', href: '#', icon: UsersIcon, current: false },
+//   { name: 'Projects', href: '#', icon: FolderIcon, current: false },
+//   { name: 'Calendar', href: '#', icon: CalendarIcon, current: false },
+//   { name: 'Documents', href: '#', icon: DocumentDuplicateIcon, current: false },
+//   { name: 'Reports', href: '#', icon: ChartPieIcon, current: false },
+// ]
 
 export function Sidebar() {
   return (
@@ -50,7 +59,7 @@ const SidebarWrapper = styled('div')(({ theme }) => ({
   paddingTop: '2rem',
   height: '100%',
   width: '5rem',
-  border: `1px solid ${theme.palette.borders.lightGrey}`,
+  border: `1px solid ${theme.palette.border}`,
 }))
 
 const SidebarButton = (props: {
@@ -65,7 +74,7 @@ const SidebarButton = (props: {
         justifyContent: 'center',
         position: 'relative',
         svg: {
-          color: props.selected ? 'primary' : 'grey9',
+          color: props.selected ? 'primary.main' : 'grey9',
           height: '2rem',
           width: '2rem',
           transition: 'color 0.2s ease-in-out',
@@ -77,7 +86,7 @@ const SidebarButton = (props: {
               top: '-1rem',
               left: 0,
               bottom: '-1rem',
-              backgroundColor: 'primary',
+              backgroundColor: 'primary.main',
               width: '4px',
               borderTopRightRadius: '4px',
               borderBottomRightRadius: '4px',

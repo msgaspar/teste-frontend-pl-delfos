@@ -1,4 +1,4 @@
-import { Box, ThemeProvider, styled } from '@mui/system'
+import { ThemeProvider } from '@mui/material/styles'
 import { defaultTheme } from './styles/themes/default'
 import { GlobalStyles } from './styles/global'
 import { Layout } from './components/layout'
@@ -11,7 +11,3 @@ export function App() {
     </ThemeProvider>
   )
 }
-
-const Title = styled('h1')(({ theme }) => ({
-  color: theme.palette.primary,
-}))
