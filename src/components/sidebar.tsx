@@ -58,8 +58,8 @@ const SidebarWrapper = styled('div')(({ theme }) => ({
   paddingBottom: '2rem',
   paddingTop: '2rem',
   height: '100%',
-  width: '5rem',
-  border: `1px solid ${theme.palette.border}`,
+  width: '3.5rem',
+  border: `1px solid ${theme.palette.border.main}`,
 }))
 
 const SidebarButton = (props: {
@@ -74,9 +74,9 @@ const SidebarButton = (props: {
         justifyContent: 'center',
         position: 'relative',
         svg: {
-          color: props.selected ? 'primary.main' : 'grey9',
-          height: '2rem',
-          width: '2rem',
+          color: props.selected ? 'primary.main' : 'grey.900',
+          height: '1.5rem',
+          width: '1.5rem',
           transition: 'color 0.2s ease-in-out',
         },
         '&::before': props.selected

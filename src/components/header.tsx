@@ -13,7 +13,7 @@ export function Header() {
       component="header"
       sx={{
         height: '3.5rem',
-        backgroundColor: 'background.lightGrey',
+        backgroundColor: 'grey.50',
         borderBottom: '1px solid',
         borderColor: 'border.main',
         display: 'flex',
@@ -32,7 +32,7 @@ export function Header() {
           sx={{
             fontSize: '1.5rem',
             fontWeight: 600,
-            color: 'text.dark',
+            color: 'text.primary',
           }}
         >
           Highlights
@@ -45,16 +45,16 @@ export function Header() {
             position: 'relative',
             alignItems: 'center',
             border: '1px solid',
-            borderColor: 'text.danger',
+            borderColor: 'warning.main',
             borderRadius: '4px',
             fontWeight: 500,
-            color: 'text.danger',
+            color: 'warning.main',
             fontSize: '14px',
           }}
         >
           <Box
             sx={{
-              backgroundColor: 'text.danger',
+              backgroundColor: 'warning.main',
               width: '8px',
               height: '8px',
               borderRadius: '4px',
@@ -82,11 +82,12 @@ export function Header() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            backgroundColor: 'grey1',
+            backgroundColor: 'grey.100',
             color: 'white',
             svg: {
               height: '1rem',
               width: '1rem',
+              color: 'grey.A400',
             },
           }}
         >
@@ -100,15 +101,15 @@ export function Header() {
             fontWeight: 500,
           }}
         >
-          <Box component="p" sx={{ color: 'grey8', fontSize: '10px' }}>
+          <Box component="p" sx={{ color: 'grey.800', fontSize: '10px' }}>
             Data
           </Box>
           <Box
             component="p"
             sx={{
               fontSize: '1rem',
-              color: 'grey1',
-              svg: { width: '1rem', height: '1rem', color: 'grey7' },
+              color: 'grey.100',
+              svg: { width: '1rem', height: '1rem', color: 'grey.700' },
               display: 'flex',
               alignItems: 'center',
               gap: '8px',
@@ -129,7 +130,7 @@ export function Header() {
           px: '1rem',
         }}
       >
-        <Box component="p" sx={{ color: 'grey8', fontSize: '10px' }}>
+        <Box component="p" sx={{ color: 'grey.800', fontSize: '10px' }}>
           Visualizando
         </Box>
         <Box
@@ -137,8 +138,8 @@ export function Header() {
           sx={{
             fontSize: '1rem',
             fontWeight: 400,
-            color: 'grey1',
-            svg: { width: '1rem', height: '1rem', color: 'grey7' },
+            color: 'grey.100',
+            svg: { width: '1rem', height: '1rem', color: 'grey.700' },
             display: 'flex',
             alignItems: 'center',
             gap: '10px',
@@ -153,10 +154,10 @@ export function Header() {
         sx={{
           display: 'flex',
           alignItems: 'center',
-          bgcolor: 'orange8',
+          bgcolor: 'primary.800',
           fontWeight: 500,
           fontSize: '1rem',
-          color: 'orange2',
+          color: 'primary.200',
           borderRadius: '4px',
           height: '2rem',
           px: '0.5rem',

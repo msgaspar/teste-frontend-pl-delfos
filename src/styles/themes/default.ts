@@ -13,27 +13,20 @@ declare module '@mui/material/styles' {
 
 export const defaultTheme = createTheme({
   palette: {
-    primary: { main: '#FF7D1A' },
+    primary: { main: '#FF7D1A', 200: '#FF7005', 800: '#FFE2CC' },
     border: { main: '#CFD4E5' },
-    // grey: { light: '#ECEDEF' },
-    // grey11: '#E5E9EE',
-    // grey10: '#D6DCE3',
-    // grey9: '#B1B9C3',
-    // grey8: '#8C97A1',
-    // grey7: '#8E91A4',
-    // grey5: '#615E69',
-    // grey2: '#0B1C2C',
-    // grey1: '#0C111C',
-    // orange2: '#FF7005',
-    // orange8: '#FFE2CC',
-    // red2: '#F42829',
-    // borders: {
-    //   lightGrey: '#CFD4E5',
-    // },
-    // bg: {
-    //   grey: '#EFF2F4',
-    // },
-    // primaryText: '#212429',
-    // dangerText: '#F42829',
+    grey: {
+      50: '#EFF2F4',
+      100: '#0C111C',
+      200: '#0B1C2C',
+      500: '#615E69',
+      700: '#8E91A4',
+      800: '#8C97A1',
+      900: '#B1B9C3',
+      A100: '#E5E9EE',
+      A400: '#F9F9F9',
+    },
+    text: { primary: '#212429' },
+    warning: { main: '#F42829' },
   },
 })

@@ -35,7 +35,7 @@ export function DashboardPage() {
         <Box sx={{ padding: '1.5rem 1rem', width: '100%', maxWidth: '800px' }}>
           <Box
             component="h3"
-            sx={{ color: 'grey2', fontWeight: 500, mb: '1.5rem' }}
+            sx={{ color: 'grey.200', fontWeight: 500, mb: '1.5rem' }}
           >
             Eventos em destaque que ocorreram no período selecionado:
           </Box>
@@ -55,7 +55,7 @@ export function DashboardPage() {
                     sx={{
                       fontWeight: 500,
                       fontSize: '14px',
-                      color: 'grey2',
+                      color: 'grey.200',
                       h3: {
                         fontSize: '28px',
                         fontWeight: 600,
@@ -79,10 +79,10 @@ export function DashboardPage() {
                       flexDirection: 'column',
                       justifyContent: 'flex-end',
                       paddingBottom: '4px',
-                      color: 'red2',
+                      color: 'warning.main',
                       fontWeight: 500,
                       span: {
-                        color: 'grey8',
+                        color: 'grey.800',
                       },
                     }}
                   >
@@ -110,7 +110,7 @@ export function DashboardPage() {
                         '.bar-bg': {
                           width: '100%',
                           height: '18px',
-                          backgroundColor: 'grey11',
+                          backgroundColor: 'grey.A100',
                           position: 'absolute',
                           bottom: 0,
                           borderRadius: '2px',
@@ -127,7 +127,7 @@ export function DashboardPage() {
                           position: 'absolute',
                           height: '24px',
                           width: '2px',
-                          bgcolor: 'grey2',
+                          bgcolor: 'grey.200',
                           left: 'calc(329 / (329.09 * 1.2) * 100% - 2px) ',
                           borderRadius: '2px',
                           top: 0,
@@ -159,7 +159,7 @@ export function DashboardPage() {
                         '.bar-bg': {
                           width: '100%',
                           height: '18px',
-                          backgroundColor: 'grey11',
+                          backgroundColor: 'grey.A100',
                           position: 'absolute',
                           bottom: 0,
                           borderRadius: '2px',
@@ -176,7 +176,7 @@ export function DashboardPage() {
                           position: 'absolute',
                           height: '24px',
                           width: '2px',
-                          bgcolor: 'grey2',
+                          bgcolor: 'grey.200',
                           left: 'calc(329 / (329.09 * 1.2) * 100% - 2px) ',
                           borderRadius: '2px',
                           top: 0,
@@ -320,7 +320,7 @@ const EventsGroup = (props: {
               border: '1px solid',
               borderColor: 'border.main',
               borderRadius: '8px 8px 0 0',
-              bgcolor: 'lightGrey',
+              bgcolor: 'grey.50',
               height: '50px',
               display: 'flex',
               alignItems: 'center',
@@ -336,7 +336,7 @@ const EventsGroup = (props: {
                 svg: {
                   height: '1.5rem',
                   width: '1.5rem',
-                  color: 'grey8',
+                  color: 'grey.800',
                   fontWeight: 700,
                 },
               }}
@@ -345,7 +345,7 @@ const EventsGroup = (props: {
               <Box
                 sx={{
                   marginLeft: '1.25rem',
-                  bgcolor: 'grey2',
+                  bgcolor: 'grey.200',
                   color: 'white',
                   fontWeight: 600,
                   fontSize: '12px',
@@ -363,7 +363,7 @@ const EventsGroup = (props: {
                   span: {
                     fontWeight: 500,
                     fontSize: '14px',
-                    color: 'grey8',
+                    color: 'grey.800',
                     display: 'inline-block',
                     marginLeft: '8px',
                   },
@@ -376,7 +376,7 @@ const EventsGroup = (props: {
 
             <Box
               sx={{
-                svg: { width: '1.5rem', height: '1.5rem', color: 'grey8' },
+                svg: { width: '1.5rem', height: '1.5rem', color: 'grey.800' },
               }}
             >
               {isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
@@ -432,11 +432,11 @@ const RiskCard = (props: {
             margin: '1.5rem 1.5rem 1.75rem',
             fontWeight: 500,
             h3: {
-              color: 'grey2',
+              color: 'grey.200',
               fontSize: '20px',
               marginBottom: '4px',
             },
-            '> p': { color: 'grey5' },
+            '> p': { color: 'grey.500' },
           }}
         >
           <h3>{props.title}</h3>
@@ -447,11 +447,11 @@ const RiskCard = (props: {
           sx={{
             fontWeight: 600,
             fontSize: '14px',
-            color: 'grey2',
+            color: 'grey.200',
             padding: '0.75rem 1rem',
             bgcolor: 'white',
             border: '1px solid',
-            borderColor: 'grey10',
+            borderColor: '#D6DCE3',
             borderRadius: '2px',
             marginRight: '0.75rem',
             marginTop: '0.75rem',
