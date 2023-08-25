@@ -16,6 +16,7 @@ import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid'
 import HighchartsReact from 'highcharts-react-official'
 import Highcharts from 'highcharts'
 import CustomizedTables from './table'
+import { NewOccurrencesChart } from './newOccurrencesChart'
 
 export function DashboardPage() {
   return (
@@ -293,7 +294,7 @@ export function DashboardPage() {
               eventsCount={22}
               title="Novas ocorrências"
             >
-              mais gráficos
+              <NewOccurrencesChart />
             </EventsGroup>
           </Stack>
         </Box>
